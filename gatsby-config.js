@@ -1,13 +1,15 @@
 module.exports = {
+  // サイトのメタデータを修正
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `サンプルサークルのお品書き`,
+    author: `サンプル執筆会`,
+    description: `さまざまなテクノロジーを紹介する同人誌を発行する同人サークルです`,
+    siteUrl: `https://example.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `sample_circle`,
     },
   },
+  // プラグインの設定
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -47,6 +49,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    // Googleアナリティクスの設定。トラッキングID（UA-000000-2など）を入れる
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -54,11 +57,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-feed`,
+    // Webアプリマニフェスト（スマホのホーム画面に追加したときの設定）
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `サンプルサークルのお品書き`,
+        short_name: `サンプルサークル`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
