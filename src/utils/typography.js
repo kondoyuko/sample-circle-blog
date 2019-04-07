@@ -6,6 +6,13 @@ Wordpress2016.overrideThemeStyles = () => {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    // フォント設定の追加
+    "body": {
+      FontFamily: `"YuGothic", "Yu Gothic", "Meiryo", "Roboto Regular", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "sans-serif"`,
+    },
+    "h1, h2, h3, h4, h5, h6": {
+      FontFamily: `"YuGothic", "Yu Gothic", "Meiryo", "Roboto Regular", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "sans-serif"`,
+    },
   }
 }
 
